@@ -12,7 +12,7 @@ endZTop = 5.5;
 hangerZ = bearingZ + endZBottom + endZTop;
 hangerCZ = 2;
 
-ropeCtrX = 30;
+ropeCtrX = 60;
 ropeHoleDia = 10;
 
 screwCtrZ = endZBottom + bearingZ + screwDia/2;
@@ -27,7 +27,6 @@ module itemModule()
 		{
 			simpleChamferedCylinderDoubleEnded(d=bearingOD+12, h=hangerZ, cz=hangerCZ);
 			translate([ropeCtrX,0,0]) simpleChamferedCylinderDoubleEnded(d=ropeHoleDia+16, h=hangerZ, cz=hangerCZ);
-			
 		}
 
 		// Bearing recess:
